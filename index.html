@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="newnav.css">
+    <link rel="stylesheet" href="signupandsigninmodal.css">
+    <link rel="stylesheet" href="footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>   
+</head>
+
+
+<body id="body">
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:pomodoro();" id ="timertostopwatch" >Stopwatch</a>
+        <a id='signup'>Sign Up</a>
+        <a href="#about" id="login">Log In</a>
+        <a href="#news" id="projects">Projects</a>
+        <a href="javascript:darkmode();" id="light">Light Mode</a>
+        <a href="javascript:dropdown()" style="font-size:20px;" class="icon" >&#9776;</a>
+    </div>
+
+    <div class="container">
+        <h1 id="title"class='title'>Productivity Stopwatch</h1>
+        <h1 id="screen">
+            00 : 00 : 00
+        </h1>
+        <div class="buttons">
+            <button class="start" onclick="start()">START</button>
+            <button class="stop" onclick="stop()">STOP</button>
+            <button class="reset" onclick="reset()">RESET</button>
+            <button class="save" onclick="savee()" value="Insert row"><a href="#tabletitle" id="saveorview" style="text-decoration: none; color: white">VIEW</a></button>
+        </div>
+    </div>
+
+    <div class="downArrow bounce">
+        <button class="dropdownarrow"></button><a href="#tabletitle"><img width="40" height="40" alt="" id="arrowimage" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" /></a></button>
+    </div>
+
+    <div id="stopwatchlog">
+        <h1 id="tabletitle">Stopwatch Log</h1>
+        <table id="stopwatchlogtable">
+            <tr>
+                <th>Date</th>
+                <th>Day</th>
+                <th>Project</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <button class="backtotop"><a href="#title" id="backtotop">Back To Top ↑</a></button>
+    </div>
+
+    <div id="stopwatchlog2">
+        <h1 id="tabletitle2">Pomodoro Log</h1>
+        <table id="stopwatchlogtable2">
+            <tr>
+                <th>Date</th>
+                <th>Day</th>
+                <th>Project</th>
+                <th>Pomodoros</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <button class="backtotop"><a href="#title" id="backtotop2">Back To Top ↑</a></button>
+    </div>
+
+    <!-- <footer id="footer">
+        <ul class="footerlist">
+            <li class="footeritem">
+                <img class="githublogo"src="github_whie_background.png">
+                <a href="https://github.com/charleswfloyd3" target="_blank" id="footerlink">GitHub</a>
+            </li>
+            <li class="footeritem">
+                <img class="linkedinlogo"src="linkedinlogo.png">
+                <a href="https://www.linkedin.com/in/charles-floyd-9a38141ba/" target="_blank" id="footerlink2">Linkedin</a>
+            </li>
+            <li class="footeritem">
+                <img class="resumelogo"src="resumelogo.jpg">
+                <a id="footerlink3" >Resume</a>
+            </li>
+        </ul>
+    </footer> -->
+
+</body>
+
+<script src="index.js"></script>
+<script src="darkmode.js"></script>
+<script src="signupandsignin.js"></script>
+<script src="pomodoro.js"></script>
+<script src="dropdown.js"></script>
+</html>
