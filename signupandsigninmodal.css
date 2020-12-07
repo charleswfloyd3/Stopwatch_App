@@ -1,0 +1,19 @@
+#signupmodal{
+display: none;
+z-index: 2;
+margin-left: 40%;
+position: fixed;
+opacity: 1;
+}
+#loginmodal{
+    display: none;
+    z-index: 2;
+    margin-left: 40%;
+    position: fixed;
+    opacity: 1;
+    }
+#modal-content{
+opacity: 1;
+}
+
+

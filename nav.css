@@ -1,0 +1,96 @@
+#navbar{
+    z-index: 1;
+    background-color: whitesmoke;
+    border: 2.5px transparent solid;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    width:99.63%;
+    height:40px;
+    font-weight: 350;
+    border-radius: 1px;
+   
+}
+#navbar a{
+    margin-left: 6vw;
+    padding-top: 7.5px;
+    /* padding-left: 1.5vw;
+    padding-right: 1.5vw; */
+    text-decoration: none;
+    color: black;
+    opacity: 87%;
+    width: fit-content;
+    z-index: 5;
+}
+#navbar a:hover{
+    opacity: 100%;
+}
+#hamburgericon{
+    display: none;
+}
+#dropdownmenu{
+    margin-left: 30%;
+    display: none;
+
+
+}
+.navlink2{
+    display: none;
+
+}
+@media (max-width:822px){
+    *{
+        overflow-x: hidden;
+    }
+    #navbar{
+        display: block;
+    }
+    .navlink{
+        display: none;
+    }
+    #navlink2{
+        display:block;
+        border:2px #21eb95 solid ;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        padding-top: 10px;
+        background-color: white;
+        text-align: center;
+        width:99.3%;
+        height:50px;
+        font-weight: 450;
+        /* position: fixed; */
+
+
+        
+  
+    }
+   #timertostopwatch{
+        display: inline;
+        padding-top: 100px;
+        z-index: 10;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    #hamburgericon{
+        display: block;
+        float: right;
+        margin-right: 5vw;
+        width: fit-content;
+
+    }
+    #dropdownmenu{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        margin-left: 0;
+        width: 100%;
+        margin-top: -2.5vh ;
+        background-color: white;
+    }
+
+
+}
