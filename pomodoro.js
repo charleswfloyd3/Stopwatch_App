@@ -28,7 +28,6 @@ let secondss = 59;
 let displayminutess = 0;
 let displaysecondss = 0;
 function pomodoromachine(){
-
     secondss--
     if (secondss == 0){
         minutess--;

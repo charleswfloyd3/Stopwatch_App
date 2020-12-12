@@ -9,7 +9,6 @@ function colorLinks(hex)
         }
     }  
 }
-
 function darkmode(){
     if(document.getElementById("light").innerHTML=="Light Mode"){
     document.getElementById("body").style.backgroundImage="none";
