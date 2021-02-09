@@ -45,7 +45,13 @@ function stopwatch(){
 };
 
 function start(){
-    if(finaltime.saved != undefined){
+console.log(finaltime.saved)
+if(finaltime.saved != undefined){
+
+    }
+
+    else if(finaltime.saved == undefined){
+        time = window.setInterval(stopwatch, 1000);
 
     }
 
@@ -61,7 +67,6 @@ function start(){
 
 function stop(){
     clearInterval(time);
-    clearInterval(timee)
 };
 
 function reset(){
@@ -173,4 +178,3 @@ function savee(){
 
     };
 };
-
