@@ -24,7 +24,7 @@ function pomodoro(){
     };
 };
 let minutess = 24;
-let secondss = 59;
+let secondss = 60;
 let displayminutess = 0;
 let displaysecondss = 0;
 function pomodoromachine(){

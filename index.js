@@ -46,16 +46,10 @@ function stopwatch(){
 
 function start(){
 console.log(finaltime.saved)
-if(finaltime.saved != undefined){
 
-    }
 
-    else if(finaltime.saved == undefined){
-        time = window.setInterval(stopwatch, 1000);
+    if(document.getElementById("timertostopwatch").innerHTML == "Pomodoro"){
 
-    }
-
-    else if(document.getElementById("timertostopwatch").innerHTML == "Pomodoro"){
         document.getElementById("title").innerHTML = "Pomodoro Technique";
         timee = window.setInterval( pomodoromachine,1000);
     }
@@ -67,6 +61,7 @@ if(finaltime.saved != undefined){
 
 function stop(){
     clearInterval(time);
+    clearInterval(timee)
 };
 
 function reset(){
@@ -153,7 +148,6 @@ function turntimeintohumanlanguage(){
 function savee(){
     if(document.getElementById("title").innerHTML=="Productivity Stopwatch"){
         document.getElementById("saveorview").href="#tabletitle"
-        
     }
     else{
         document.getElementById("saveorview").href="#tabletitlepomodoro"
